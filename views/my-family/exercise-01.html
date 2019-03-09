@@ -41,19 +41,28 @@
         <div class="row justify-content-center mt-4">
             <p>When I</p>
 
-            <select class="mr-2 ml-2">
+            <select class="mr-2 ml-2" id="question">
                 <option selected>Choose...</option>
-                <option value="1">Look at</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">look at</option>
+                <option value="2">see at</option>
+                <option value="3">look</option>
+                <option value="4">watch</option>
             </select>
 
 
             <p>the old tree with nine branches in our yard, I remember the members of my family.</p>
+
+
         </div>
 
         <div class="row mt-2">
-            <input class="btn btn-outline-info" type="submit" value="Submit"><a class="btn btn-outline-dark ml-auto" href="exercise-02.html" role="button">next</a>
+            <div id="result" class="ml-auto"></div>
+        </div>
+
+
+        <div class="row mt-2">
+            <input class="btn btn-outline-info" type="submit" value="Submit" id="submit"><a
+                class="btn btn-outline-dark ml-auto" href="exercise-02.html" role="button">next</a>
         </div>
     </div>
 
@@ -62,7 +71,6 @@
             <p class="text-muted float-right">&copy;ecomap</p>
         </div>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -73,6 +81,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+    <script>
+        $("#submit").click(function (e) {
+            if ($("#question").val() == 1) {
+                $('#result').text("correct").addClass('text-success');
+            }
+            else {
+                $('#result').text("incorrect").addClass('text-danger');;
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>

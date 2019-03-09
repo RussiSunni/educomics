@@ -41,19 +41,27 @@
         <div class="row justify-content-center mt-4">
             <p>I was</p>
 
-            <select class="mr-2 ml-2">
+            <select class="mr-2 ml-2" id="question">
                 <option selected>Choose...</option>
                 <option value="1">brought up</option>
                 <option value="2">brought down</option>
                 <option value="3">brought back</option>
+                <option value="4">brought foward</option>
             </select>
 
 
             <p>in a humble small family.</p>
         </div>
 
+
         <div class="row mt-2">
-            <input class="btn btn-outline-info" type="submit" value="Submit"><a class="btn btn-outline-dark ml-auto" href="exercise-01.html" role="button">next</a>
+            <div id="result" class="ml-auto"></div>
+        </div>
+
+
+        <div class="row mt-2" id="q-5">
+            <input class="btn btn-outline-info" type="submit" value="Submit" id="submit"><a
+                class="btn btn-outline-dark ml-auto" href="exercise-01.html" role="button">next</a>
         </div>
     </div>
 
@@ -73,6 +81,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+    <script>
+        $("#submit").click(function (e) {
+            if ($("#question").val() == 1) {
+                $('#result').text("correct").addClass('text-success');
+            }
+            else {
+                $('#result').text("incorrect").addClass('text-danger');;
+            }
+        });
+    </script>
 </body>
 
 </html>
