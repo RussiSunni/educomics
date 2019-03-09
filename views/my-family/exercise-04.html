@@ -55,7 +55,7 @@
 
 
         <div class="row mt-2">
-            <div id="result" class="ml-auto"></div>
+            <div id="result" class="ml-auto text-white p-2"></div>
         </div>
 
         <div class="row mt-2" id="q-4">
@@ -84,10 +84,10 @@
     <script>
         $("#submit").click(function (e) {
             if ($("#question").val() == 3) {
-                $('#result').text("correct").addClass('text-success');
+                $('#result').text("correct").addClass('bg-success').removeClass('bg-danger');
             }
             else {
-                $('#result').text("incorrect").addClass('text-danger');;
+                $('#result').text("incorrect").addClass('bg-danger').removeClass('bg-success');
             }
         });
     </script>
