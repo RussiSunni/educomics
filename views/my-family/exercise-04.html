@@ -59,7 +59,7 @@
         </div>
 
         <div class="row mt-2" id="q-4">
-            <input class="btn btn-outline-info" type="submit" value="Submit" id="submit"><a
+            <input class="btn btn-outline-info" type="submit" value="Submit" id="submit4"><a
                 class="btn btn-outline-dark ml-auto" href="exercise-05.html" role="button">next</a>
         </div>
     </div>
@@ -80,17 +80,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="../../script/script.js"></script>
 
-    <script>
-        $("#submit").click(function (e) {
-            if ($("#question").val() == 3) {
-                $('#result').text("correct").addClass('bg-success').removeClass('bg-danger');
-            }
-            else {
-                $('#result').text("incorrect").addClass('bg-danger').removeClass('bg-success');
-            }
-        });
-    </script>
 </body>
 
 </html>
