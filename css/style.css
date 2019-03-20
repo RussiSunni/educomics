@@ -25,12 +25,19 @@
     min-height: 100%;
     }
   
+
+
   
   body {
     background-color: #d6b47e!important;
     margin-bottom: 40px; /* Margin bottom by footer height */
   }
   
+
+.website-body {
+  background: #d2d4e6!important;
+}
+
   
   .dialogue {
         text-align:center; color:white;
