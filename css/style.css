@@ -20,7 +20,7 @@
 
 /* from Sunshine English School */
 
-html {
+html, body {
   position: relative;
   min-height: 100%;
   }
@@ -123,3 +123,11 @@ background: #d2d4e6!important;
     .left {	float:left;
     }				
   }
+
+
+
+  .lesson-navbar {
+    position: fixed;
+    bottom:20px;
+  }
+
