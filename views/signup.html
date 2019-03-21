@@ -10,7 +10,7 @@
 </head>
 
 <body class="fullscreen">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="../../images/logo.png" width="80" height="80" alt="">
         </a>
@@ -28,43 +28,22 @@
         </div>
     </nav>
 
-    <div class="main container">
-        <div class="row justify-content-center mt-3">
-            <img src="../../images/my-family/my-family.svg" class="img-fluid">
-        </div>
 
-        <div class="row mt-3">
+    <form method = "post" action = "../../script/signup.php">
+        <div class="form-group row">
             <div class="col">
-                <img src="../../images/my-family/exercise-01.png" class="img-fluid mx-auto d-block">
+                <input type="text" class="form-control" name="name" placeholder="username">
             </div>
         </div>
-        <div class="row justify-content-center mt-4">
-            <p>When I</p>
-
-            <select class="mr-2 ml-2" id="question">
-                <option selected>Choose...</option>
-                <option value="1">look at</option>
-                <option value="2">see at</option>
-                <option value="3">look</option>
-                <option value="4">watch</option>
-            </select>
-
-
-            <p>the old tree with nine branches in our yard, I remember the members of my family.</p>
-
-
+        <div class="form-group row">
+            <div class="col">
+                <input type="text" class="form-control" name="email" placeholder="email address">
+            </div>
         </div>
-
-        <div class="row mt-2">
-            <div id="result" class="ml-auto text-white p-2"></div>
-        </div>
+        <button type="submit" name="submit" value="Submit" class="btn btn-primary">Submit</button>
+    </form>
 
 
-        <div class="row mt-2">
-            <input class="btn btn-outline-info" type="submit" value="Submit" id="submit1"><a
-                class="btn btn-outline-dark ml-auto" href="exercise-02.html" role="button">next</a>
-        </div>
-    </div>
 
     <footer class="footer">
         <div class="container">
